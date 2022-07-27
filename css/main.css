@@ -1,0 +1,223 @@
+@charset "UTF-8";
+.reg-text {
+  color: black;
+  padding: 1.3rem !important;
+}
+.special-text {
+  color: white;
+  padding: 0.7rem !important;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 5px;
+}
+/* TAGS GENERAL */
+.p, .reg-text, p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Roboto";
+}
+* {
+  margin: 0.5rem;
+  transition-duration: 0.5s;
+  transition: all;
+}
+body {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: Roboto;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+/* FONT */
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: "VAGRounded";
+  src: url(../assets/fonts/Vag_Rounded_BT_0.ttf);
+}
+/* general article boxes defintion */
+.flex-container-articles, .flex-container-articles-half-width {
+  display: flex;
+  width: 100%;
+  align-self: flex-start;
+  margin: 0px;
+  font-size: 0.8rem;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  flex-flow: wrap;
+  align-content: space-between;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0.1rem;
+}
+.flex-item-articles-half-width {
+  align-items: center;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 50vh;
+  border-radius: 12px;
+  word-wrap: normal;
+  padding: 1rem;
+  flex-direction: column;
+  border: none;
+  justify-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition-duration: 0.5s;
+  background-image: url(../assets/images/theball2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: scale3d();
+  transform-style: preserve-3d;
+}
+.flex-item-articles-half-width img {
+  height: auto;
+  width: 60%;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+}
+.flex-item-articles-half-width img:hover {
+  left: 0vw;
+  top: 10vh;
+}
+.flex-item-articles-half-width {
+  width: 80% !important;
+}
+.flex-item-articles-half-width img {
+  width: 95%;
+}
+.flex-item-articles-half-width {
+  transition-duration: 150ms;
+  transform: scale();
+}
+.flex-item-articles-half-width p {
+  line-height: 1rem;
+  margin: 0rem;
+  padding: 1.2rem;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+/* TITLE FLOATER */
+.flex-container-floater-top {
+  display: flex;
+  height: 4.5rem;
+  width: 100%;
+  align-self: center;
+  align-content: center;
+  flex-direction: row-reverse;
+  overflow-wrap: normal;
+  justify-content: center !important;
+  padding: 0.1rem;
+  position: fixed;
+  left: 0vw;
+  top: 0vh;
+  margin:0rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-bottom: solid;
+  border-width: 0px;
+  border-color: rgba(128, 128, 128, 0.99);
+}
+.flex-item-floater-ttf-logo {
+  display: block;
+  font-family: "VAGRounded";
+  font-size: 2.5rem;
+  color: white;
+  margin: 0rem;
+  padding: 0px;
+  padding-left: 0.4rem;
+}
+/* BOTTOM FLOATER */
+.flex-container-floater {
+  display: flex;
+  grid-auto-flow: row;
+  height: max-content;
+  width: 100%;
+  align-self: center;
+  align-content: center;
+  margin: 0px;
+  border-radius: 0px;
+  flex-direction: row;
+  justify-content: center !important;
+  padding: 0.2rem;
+  padding-right: 2rem;
+  position: fixed;
+  left: 0rem;
+  bottom: 0rem;
+  background-color: rgba(0, 0, 0, 0.99);
+  border-top: solid;
+  border-width: 0px;
+  border-color: rgba(128, 128, 128, 0.99);
+  overflow-wrap: break-word;
+}
+.flex-button {
+  display: inline-flex;
+  height: 0.85rem;
+  width: 60%;
+  height: 1.5rem;
+  align-content: center !important;
+  margin: 0.4rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  flex-direction: row;
+  font-size: 1.2rem;
+  justify-content: center !important;
+  font-family: "Roboto";
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.99);
+  color: black;
+  min-width: 100px;
+}
+.flex-button:hover {
+  background-color: rgba(64, 64, 64, 0.8);
+  color: white;
+}
+.flex-not-button {
+  display: inline-block;
+  height: 0.65rem;
+  width: max-content;
+  align-self: flex-start;
+  align-content: left;
+  margin: 0.2rem;
+  border-radius: 2px;
+  flex-direction: row;
+  font-size: 0.6rem;
+  justify-content: center !important;
+  font-family: "VAGRounded";
+  padding: 0.35rem;
+  position: relative;
+  border: none;
+  color: white;
+}
+@media screen and (max-width: 450px) {
+  .flex-item-articles-half-width {
+    display: flex;
+    width: 95vw !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flex-item-articles-half-width {
+    display: flex;
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .flex-item-articles-half-width {
+    display: flex;
+    width: 20vw;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .flex-item-articles-half-width {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}

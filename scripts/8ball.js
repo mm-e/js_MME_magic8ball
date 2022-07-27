@@ -3,7 +3,7 @@
 // global variables and constants 
 
 // main json url
-const url = "../assets/json/answers.json"
+const url = "https://mm-e.github.io/js_MME_magic8ball/assets/json/answers.json"
 // for local dev: const url = "../assets/json/answers.json"
 
 
